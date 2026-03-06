@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Práctica</title>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+
+      <style type="text/css">
+
+         #contenedor{
+            width: 1440px;
+            height: 6000px;
+            background-color: white;
+            margin: auto;
+                  }
+
+         #barra{
+            width: 1440px;
+            height: 71px;
+            background-color: #9B4819;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                  }
+
+         #logo{
+            width: 200px;
+            height: 30px;
+            margin-left: 200px;
+                  }
+
+
+         .ops{
+            display: flex;
+            gap: 13px;
+            margin-right: 150px;
+         }
+
+         #boton{
+            width: 120px;
+            height: 20px;
+            font-family: "Montserrat", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 600;
+         font-size: 14px;
+         font-style: normal;
+         color: white;
+         }
+
+         #foto{
+            width: 1440px;
+            height: 533px;
+            background: url(img/imagen1.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: italic;
+         font-size: 50px;
+         color: white;
+         position: relative;
+                  }
+
+         #fort{
+            width: 400px;
+            height: 50px;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 600;
+         font-style: normal;
+         font-size: 70px;
+         color: white;
+         text-align: left;
+                  }
+
+         #confi{
+            width: 400px;
+            height: 50px;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: italic;
+         font-size: 70px;
+         color: white;
+         text-align: center;
+         text-decoration: underline;
+         text-decoration-thickness: 3px;
+         text-underline-offset: 8px;
+         text-align: left;
+                  }
+
+         #laen{
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 50px;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 70px;
+         color: white;
+         text-align: left;
+         z-index: 2;
+         padding: 8px 16px;
+         }
+
+         #cuadro{
+            width: 566px;
+            height: 98px;
+            border: #9B4819 5px solid; 
+            margin: auto;
+            margin-top: 90px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 800;
+         font-style: normal;
+         font-size: 37px;
+         color: #9B4819;
+         
+                  }
+
+         #aco{
+            width: 1040px;
+            height: 342px;
+            background: url(img/imagen2.png);
+            margin-left: 200px;
+            margin-top: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: italic;
+         font-size: 50px;
+         color: white;
+                  }
+
+         #sha{
+            width: 1040px;
+            height: 342px;
+            background: url(img/imagen3.png);
+            margin-left: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: italic;
+         font-size: 50px;
+         color: white;
+                  }
+
+         #cuadre{
+            width: 1440px;
+            height: 640px;
+            background-color: white;
+                  display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               text-align: left;
+                  }
+
+         #beneficios{
+            width: 250px;
+            height: 50px;
+            margin-top: 100px;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 600;
+         font-style: normal;
+         font-size: 50px;
+         color: #9B4819;
+                  }
+
+         #linea{
+            width: 535px;
+            height: 2px;
+            background-color: #9B4819;
+            margin-left: 500px;
+            margin-top: 35px;
+         }
+
+         #texto{
+            width: 500px;
+            height: 500px;
+            margin-top: 50px;
+         font-family: "Montserrat", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-size: 24px;
+         font-style: normal;
+         color: #411700;
+                  }
+
+         #banner{
+            width: 1440px;
+            height: 611px;
+            padding: 80px 0;
+            background-color: #9B4819;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+                  }
+
+         #ban{
+            font-family: "Playfair Display", serif;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 30px;
+            text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+                  }
+
+         #masdel{
+            width: 400px;
+            height: 50px;
+            margin-top: 100px;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 600;
+         font-style: normal;
+         font-size: 50px;
+         color: white;
+         text-align: center;
+                  }
+
+         #porce{
+            width: 400px;
+            height: 50px;
+            
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 300;
+         font-style: italic;
+         font-size: 60px;
+         color: white;
+         text-align: center;
+                  }
+
+         #sub{
+            width: 600px;
+            height: 50px;
+            margin-top: 20px;
+            margin: auto;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 10;
+         font-style:normal;
+         font-size: 40px;
+         color: white;
+                     text-align: center;
+                  }
+
+         #texto2{
+            width: 950px;
+            height: 500px;
+            margin-top: 30px;
+         font-family: "Montserrat", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 250;
+         font-size: 24px;
+         font-style: normal;
+         color: white;
+         text-align: justify;
+                  }
+
+         #logo2{
+            width: 300px;
+            height: 100px;
+            object-fit: cover;
+                  }
+         
+         #img{
+            width: 1440px;
+            height: 431px;
+            background: url(img/imagen4.png);
+                  }
+
+         #cuad2{
+            width: 1440px;
+            height: 600px;
+            background-color: white;
+                  display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               text-align: left;
+                  }
+
+         #suscrib{
+            width: 300px;
+            height: 50px;
+            margin-top: 130px;
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 60px;
+         color: #9B4819;
+                  }
+
+         #txt{
+            width: 450px;
+            height: 500px;
+            margin-top: 50px;
+            margin-bottom: 80px;
+         font-family: "Montserrat", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-size: 24px;
+         font-style: normal;
+         color: #411700;
+                  }
+
+         #line{
+            width: 698px;
+            height: 2px;
+            background-color: #9B4819;
+            margin: 0 0 20px 0;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+                  }
+
+         #text{
+            width: 320px;
+            height: 500px;
+            margin-top: 10px;
+         font-family: "Montserrat", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-size: 20px;
+         font-style: normal;
+         color: #411700;
+                  }
+
+         #line2{
+            width: 698px;
+            height: 2px;
+            background-color: #9B4819;
+            margin: 0 0 150px 0;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+                  }
+
+         #pie{
+            width: 1440px;
+            height: 134px;
+            background-color: #9B4819;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+                  }
+
+      </style>
+
+
+</head>
+
+<body>
+   <div id="contenedor">
+      <nav id="barra">
+         <div id="logo">
+            <img src="img/nativo logo.jpg">
+         </div>
+         <div class="ops">
+         <div id="boton">Inicio</div>
+         <div id="boton">Productos</div>
+         <div id="boton">Nosotros</div>
+         <div id="boton">Contacto</div>
+         </div>
+      </nav>
+
+      <div id="foto">
+         <div id="laen">
+            <span id="fort">Fortalece</span> la<br>
+            <span id="confi">confianza</span> en<br>
+            ti mismo</div>
+      </div>
+
+      <div id="cuadro">Conoce nuetros productos</div>
+      <div id="aco">Acondicionador</div>
+      <div id="sha">Shampoo</div>
+
+      <div id="cuadre">
+         <div id="beneficios">Beneficios</div>
+         <div id="linea"></div>
+         <div id="texto">
+         <p>Fortalece el cuero cabelludo para evitar <br>
+         la <strong> caída del cabello.</strong></p>
+
+         <p>Hecho a base de <strong>ingredientes naturales</strong>, <br>
+         con propiedades orgánicas.</p>
+
+         <p>Presentación en barra lo cual lo hace <br>
+         más <strong>práctico, ecológico y duradero.</strong></p>
+      </div>
+      </div>
+
+
+      <div id="banner">
+         <h2 class="ban">
+         <span id="masdel">Más de el</span>
+         <span id="porce">25%</span><br>
+         <span id="sub">de mujeres sufren de alopecia</span></h2>
+         <div id="texto2">
+         <p>En Nativo te ayudamos a recuperar y fortalecer el crecimiento de tu cabello,<br>
+         tu confianza y tu imágen.</p>
+
+         <p>Ofrecemos una línea de productos de cuidado personal que consiste en un<br>
+         shampoo y acondicionador en barra, para ayudar a la caída del cabello y <br>
+         fortalecer el crecimiento del mismo.</p>
+      </div>
+      <div id="logo2">
+            <img src="img/nativo logo.jpg">
+         </div>
+      </div>
+
+      <div id="img"></div>
+
+
+      <div id="cuad2">
+         <div id="suscrib">Suscríbete</div>
+         <div id="txt">Para recibir noticias y ofertas nuevas</div>
+         <div id="line"></div>
+         <div id="text">Introduce tu correo electrónico</div>
+         <div id="line2"></div>
+      </div>
+
+      <div id="pie">
+         <div id="logo">
+            <img src="img/nativo logo.jpg">
+         </div>
+         <div class="ops">
+         <div id="boton">Inicio <br>Productos</div>
+         <div id="boton">Nosotros<br> Contacto</div>
+         <div id="boton">Aviso de<br>privacidad</div>
+         </div>
+      </div>
+
+      </div> 
+
+</body>
+
+</html>
